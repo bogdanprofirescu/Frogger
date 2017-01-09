@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- the game menu is made in this file. also a div for displaying score, lives and instructions -->
+<body>
+  <!-- the div for displaying score, lives and instructions during the game; stays hidden while in main menu -->
+  <div id="game_stats" style="display: none;"">
+    <p id="score"></p>
+    <p id="lives"></p>
+    <p id="howto1">&nbsp&nbsp&nbsp--Press ESC for pause/exit--&nbsp</p>
+    <p id="howto2">&nbsp--Use arrows to move character--</p>
+  </div>
+  <div id="main_div">
+      <div>
+    <p id="welcome">Welcome to Frogger</p>
+     </div>
+        <div id="menu">
+        <p id="instructions" class="menu_item" onclick="MenuInstructionsClick()">Game Instructions</p>
+        <p id="character" class="menu_item" onclick="ChangeCharacter()">Change character</p>
+        <p id="game" class="menu_item" onclick="StartGame()">Start new game</p>
+        <p id="exit" class="menu_item" onclick="ExitGame()">Exit game</p>
+        </div>
+      <div id="char_image">
+        <img src="images/menubug.jpg" id="placeholder" alt="funny bug" height="152" width="120">
+      </div>
+</div>
+<script src="js/resources.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/app.js"></script>
+<script src="js/menuevents.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    text-align: center;
+}
+
+#game_stats {
+  width: 505px;
+  height: 12px;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+}
+
+#score, #lives, #howto1, #howto2
+{
+  text-align: left;
+  font-family: "Berlin Sans FB";
+  font-size: 14px;
+  display: inline-block;
+  /*margin: 0;*/
+ text-align: justify;
+}
+#score, #lives {
+  background-color: rgb(188, 52, 15);
+  color: white;
+}
+
+
+
+#menu {
+font-style: normal;
+font-size: 23px;
+color: rgb(89, 1, 15);
+font-family: "Algerian";
+text-align: right;
+
+}
+
+#welcome
+{
+  font-size: 26px;
+  font-style: normal;
+  color: rgb(242, 78, 102);
+  font-family: "Algerian";
+  }
+
+.menu_item
+{
+  margin: 5px;
+  cursor: pointer;
+}
+
+.menu_item:hover {
+  color:rgb(186, 100, 161);
+}
+
+#main_div {
+    text-align: center;
+    position: relative;
+  	top: 50%;
+  	transform: translateY(50%);
+
+}
+
+#char_image, #menu
+{
+  width: 300px;
+  height:150px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#placeholder {
+  text-align: left;
+}
+
+#char_image
+{
+    text-align: left;
+    padding-left: 10px;
+
+}
